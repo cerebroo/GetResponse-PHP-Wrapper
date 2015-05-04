@@ -605,7 +605,6 @@ class GetResponse
 		curl_close($handle);
 		if(!$response->error) return $response->result;
 		else if($this->errorsOn){
-			var_dump($request);
 			return $response->error;
 		}
 	}
